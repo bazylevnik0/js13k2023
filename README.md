@@ -1,4 +1,4 @@
-# js13games2023<br>
+# js13k2023<br>
 
 Brave knight is fighting with The Dragon!<br>
 Let's help the knight to turn off the fire.<br>
