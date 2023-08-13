@@ -22,3 +22,12 @@ Image:<br>
 Sound:<br>
 [1,3] - slowly repeatable low synth<br>
 [4] - laughing(very low quality)<br>
+
+UI:<br>
+demoscene:<br>
+fullscreen canvas with programmable picture(after showing is hiding)<br>
+game:<br>
+field of checkbuttons<br>
+button of reload, label of count steps, ask for help button<br>
+*with details of fire and light, scales(snake) and swords<br>
+
