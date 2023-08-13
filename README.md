@@ -12,3 +12,13 @@ https://www.youtube.com/watch?v=mbj1RFaoyLk<br>
 inspriational style:<br>
 https://addictedgamewise.com/might-and-magic-book-one-14-eastward-to-dusk/<br>
 https://en.wikipedia.org/wiki/Minesweeper_%28video_game%29<br>
+
+Demo scene:
+Image:
+1)"13th century" - show scene of castle (very dark age)
+2)"The dragon is a powerful and dangerous creature..." - show dragon(dark and fire) 
+3)"While the knight is a brave and courageous hero." - show hero in front of dragon(just light)
+4)Can you trick the dragon mind? Hero... ahahahahahahahahahah - eyes and smile of dragon in the fire
+Sound:
+[1,3] - slowly repeatable low synth
+[4] - laughing(very low quality)
