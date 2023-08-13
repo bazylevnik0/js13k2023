@@ -1,6 +1,6 @@
 # js13games2023<br>
 
-Brave knight fighting with The Dragon!<br>
+Brave knight is fighting with The Dragon!<br>
 Let's help the knight to turn off the fire.<br>
 
 logic of game:<br>
