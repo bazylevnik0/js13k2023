@@ -23,6 +23,7 @@ Image:<br>
 Sound:<br>
 [1,3] - slowly repeatable low synth<br>
 [4] - laughing(very low quality)<br>
+[5] - main game mode song 
 
 UI:<br>
 demoscene:<br>

@@ -18,18 +18,39 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 50%;
       text-align: center;
     }
 
     table {
       margin: 0 auto;
-      width: 50%;
+      width: 300px;
+      height: 300px;
     }
 
     td {
       text-align: center;
     }
+    
+    input {
+      width: 50px;
+      height: 50px;
+      opacity: 1.0;
+    }
+    table label:before{
+      content: " ";
+      font-size: 40px;
+      position: absolute;
+      margin-left: -48px;
+      margin-top: 5px;
+      z-index: -1;
+    }
+    input:checked {
+      opacity: 0.0;
+    }
+    input:checked + label:before{
+      content: "🔥";
+    }
+    
   </style>
 </head>
 <body>
@@ -39,39 +60,39 @@
   </div>
   <table>
   <tr>
-    <td><input type="checkbox" id="0"></td>
-    <td><input type="checkbox" id="1"></td>
-    <td><input type="checkbox" id="2"></td>
-    <td><input type="checkbox" id="3"></td>
-    <td><input type="checkbox" id="4"></td>
+    <td><input type="checkbox" id="0"><label></label></td>
+    <td><input type="checkbox" id="1"><label></label></td>
+    <td><input type="checkbox" id="2"><label></label></td>
+    <td><input type="checkbox" id="3"><label></label></td>
+    <td><input type="checkbox" id="4"><label></label></td>
   </tr>
   <tr>
-    <td><input type="checkbox" id="5"></td>
-    <td><input type="checkbox" id="6"></td>
-    <td><input type="checkbox" id="7"></td>
-    <td><input type="checkbox" id="8"></td>
-    <td><input type="checkbox" id="9"></td>
+    <td><input type="checkbox" id="5"><label></label></td>
+    <td><input type="checkbox" id="6"><label></label></td>
+    <td><input type="checkbox" id="7"><label></label></td>
+    <td><input type="checkbox" id="8"><label></label></td>
+    <td><input type="checkbox" id="9"><label></label></td>
   </tr>
   <tr>
-    <td><input type="checkbox" id="10"></td>
-    <td><input type="checkbox" id="11"></td>
-    <td><input type="checkbox" id="12"></td>
-    <td><input type="checkbox" id="13"></td>
-    <td><input type="checkbox" id="14"></td>
+    <td><input type="checkbox" id="10"><label></label></td>
+    <td><input type="checkbox" id="11"><label></label></td>
+    <td><input type="checkbox" id="12"><label></label></td>
+    <td><input type="checkbox" id="13"><label></label></td>
+    <td><input type="checkbox" id="14"><label></label></td>
   </tr>
   <tr>
-    <td><input type="checkbox" id="15"></td>
-    <td><input type="checkbox" id="16"></td>
-    <td><input type="checkbox" id="17"></td>
-    <td><input type="checkbox" id="18"></td>
-    <td><input type="checkbox" id="19"></td>
+    <td><input type="checkbox" id="15"><label></label></td>
+    <td><input type="checkbox" id="16"><label></label></td>
+    <td><input type="checkbox" id="17"><label></label></td>
+    <td><input type="checkbox" id="18"><label></label></td>
+    <td><input type="checkbox" id="19"><label></label></td>
   </tr>
   <tr>
-    <td><input type="checkbox" id="20"></td>
-    <td><input type="checkbox" id="21"></td>
-    <td><input type="checkbox" id="22"></td>
-    <td><input type="checkbox" id="23"></td>
-    <td><input type="checkbox" id="24"></td>
+    <td><input type="checkbox" id="20"><label></label></td>
+    <td><input type="checkbox" id="21"><label></label></td>
+    <td><input type="checkbox" id="22"><label></label></td>
+    <td><input type="checkbox" id="23"><label></label></td>
+    <td><input type="checkbox" id="24"><label></label></td>
   </tr>
 </table>
   <div id="footer">
