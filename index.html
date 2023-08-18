@@ -113,6 +113,22 @@
   </div>
   <script>
     console.log("Hello World!");
+    let checkbox_audio  = new Audio('press.mp3');
+    let checkboxes = document.querySelectorAll('input');
+    for(el of checkboxes) {
+      el.addEventListener("click",(e)=>{
+        console.log("click: ", e.target.id);
+        checkbox_audio.play();
+      })
+    }
+    console.log(checkboxes);
+    let button_audio  = new Audio('wave.mp3');
+    let button = document.querySelector('button');
+        button.addEventListener('click',()=>{
+          button_audio.play();
+          console.log("click: wave");
+          for(el of checkboxes) el.checked = false; 
+        })
   </script>
 </body>
 </html>

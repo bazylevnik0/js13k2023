@@ -1,6 +1,7 @@
 # js13k2023<br>
 //making with PaLM's participating<br>
 //EDIT: now making solo<br>
+//sounds from xem's library
 
 Brave knight is fighting with The Dragon!<br>
 Let's help the knight to turn off the fire.<br>
