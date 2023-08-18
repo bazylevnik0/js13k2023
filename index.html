@@ -79,6 +79,7 @@
       font-size: 6rem;
       position: absolute;
       margin-top: 5px;
+      cursor: pointer;
     }
     
     #header{
@@ -90,7 +91,7 @@
   <div id="box">
   <p id="firestarter">👹</p>
   <div id="header">
-    <p style="color: red;"><b>"I wanna fire!"</b></p><hr>
+    <b><p id="firestarter_p" style="color: red;">"I wanna fire!"</p></b><hr>
     <p style="font-size: 16px;">🧙‍♂️👸👼🤴🧛<br><b>"Hero please put out the fire!"</b></p>
     <label>steps:0</label>
   </div>
@@ -136,22 +137,70 @@
   </div>
   </div>
   <script>
+    let firestarter  = document.querySelector("#firestarter");
+    let firestarter_p = document.querySelector("#firestarter_p");
+    firestarter.addEventListener("click",()=>{
+      console.log("here");
+      firestarter_p.style.fontSize="13px";
+      firestarter_p.innerHTML ='"try to inverse fire in cells and the surrounding[+]<br>ahahahahahahahahahahah"';
+    })
     console.log("Hello World!");
+    let score = 0;
+    let label = document.querySelector('label');
     let checkbox_audio  = new Audio('press.mp3');
     let checkboxes = document.querySelectorAll('input');
-    for(el of checkboxes) {
-      el.addEventListener("click",(e)=>{
+    for(let i = 0; i < checkboxes.length; i++) {
+      checkboxes[i].addEventListener("click",(e)=>{
         console.log("click: ", e.target.id);
         checkbox_audio.play();
+        score++; label.innerHTML = "steps: "+score; 
+        if((i-1)%5>=0&&Math.floor(i/5)==Math.floor((i-1)/5)){
+          if(checkboxes[i-1].checked){
+                 checkboxes[i-1].checked = false;  
+          } else checkboxes[i-1].checked = true;
+        }
+        if((i+1)%5<=4&&Math.floor(i/5)==Math.floor((i+1)/5)){
+          if(checkboxes[i+1].checked){
+                 checkboxes[i+1].checked = false;  
+          } else checkboxes[i+1].checked = true;
+        }
+        if(Math.floor(i/5)-1>=0){
+          if(checkboxes[i-5].checked){
+                 checkboxes[i-5].checked = false;  
+          } else checkboxes[i-5].checked = true;
+        }
+        if(Math.floor(i/5)+1>=0){
+          if(checkboxes[i+5].checked){
+                 checkboxes[i+5].checked = false;  
+          } else checkboxes[i+5].checked = true;
+        }
+        let check = true;
+        for(el of checkboxes) {
+          if(el.checked==true)check = false;
+        } if (check){ 
+          firestarter_p.style.fontSize="20px";
+          firestarter_p.style.color="green";
+          firestarter_p.innerHTML ='"OK. You win..."';
+        }
       })
     }
     console.log(checkboxes);
+    function burn(){
+      for(el of checkboxes){
+        if(Math.floor(Math.random()*3)==0)el.checked = true;
+      }
+    } burn();
     let button_audio  = new Audio('wave.mp3');
     let button = document.querySelector('button');
         button.addEventListener('click',()=>{
           button_audio.play();
           console.log("click: wave");
-          for(el of checkboxes) el.checked = false; 
+          for(el of checkboxes) el.checked = false;
+          score = 0; label.innerHTML = "steps: "+score;
+          burn();
+          firestarter_p.style.fontSize="20px";
+          firestarter_p.style.color="red";
+          firestarter_p.innerHTML ='"I wanna fire!"';
         })
   </script>
 </body>
