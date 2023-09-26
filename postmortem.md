@@ -1,7 +1,7 @@
 Art
 
 Sure, using emoji is not an invention, but maybe I found something interesting: the dragon(or witch you name or interpretation you wish) in different browsers has its own face, in common -each browser has some differences in details. In js13kgames I was oriented to Chrome and Mozilla, I can say about it like an artist: in chrome they add some “magic”(details in lights, colors) in firefox it is way to simplification, maybe even a minimalism. Sure it is just my opinion. It is not only about the dragon, but about all the sets of symbols in the game… The dragon looks similar in both, looks like a very red guy(color of fire, blood).
-Sure we can fall to historical/folk interpretation of the dragon, I mean is it good guy or bad guy? Who knows, maybe in this castle they burn strange girls for example… And dragon are making revolution(a partisan war) just thought, just thoughts
+Sure we can fall to historical/folk interpretation of the dragon, I mean is it good guy or bad guy? Who knows, maybe in this castle they burn strange girls for example… And dragon are making a revolution(a partisan war) just thought, just thoughts
 
 Coding
 
